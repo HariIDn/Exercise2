@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,17 +52,42 @@ namespace Exercise2
        
         public void step1(int low,int high,int mid)
         {
-            int i, AH, k,temp,n1,n2,n3;
+            int[] temp = new int[64];
+            int i, AH, k,n1,n2,n3;
             n1 = (mid - 1);
             n2 = low;
             n3 = (high - low + 1);
 
+            while ((low <= n1) && (mid <= high))
+            {
+                if (adit[low] <= adit[mid])
+                    temp[n2++] = adit[low++];
+                else
+                    temp[n2++] = adit[mid++];
+            }
+            while(low<= n2)
+                temp[n2++] = adit[low++];
+            while(mid<= high)
+                temp[n2++] = adit[mid++];
+            for (i = 0; i < n3; i++)
+            {
 
-            
-            
+            }
         }
         static void Main(string[] args)
         {
+            Program prg = new Program();
+            int pilihan;
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("----------------");
+                Console.WriteLine("1. Linear Search");
+                Console.WriteLine("2. Binary Search");
+                Console.WriteLine("3. Exit");
+                Console.WriteLine(" Enter the Number 1, 2, 3");
+                pilihan = Convert.ToInt32(Console.ReadLine());
+            }
         }
     }
 }
