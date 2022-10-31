@@ -87,6 +87,11 @@ namespace Exercise2
                 Console.WriteLine("3. Exit");
                 Console.WriteLine(" Enter the Number 1, 2, 3");
                 pilihan = Convert.ToInt32(Console.ReadLine());
+
+                switch (pilihan)
+                {
+
+                }
             }
         }
     }
