@@ -82,17 +82,27 @@ namespace Exercise2
             {
                 Console.WriteLine("Menu Option");
                 Console.WriteLine("----------------");
-                Console.WriteLine("1. Linear Search");
-                Console.WriteLine("2. Binary Search");
+                Console.WriteLine("1. Algoritma 1");
+                Console.WriteLine("2. Algoritma 2");
                 Console.WriteLine("3. Exit");
                 Console.WriteLine(" Enter the Number 1, 2, 3");
                 pilihan = Convert.ToInt32(Console.ReadLine());
 
                 switch (pilihan)
                 {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("...........");
+                        Console.WriteLine("Algoritma 1");
+                        Console.WriteLine("...........");
+                        prg.input();
+                        prg.algo1();
+                        break;
 
                 }
-            }
+                Console.WriteLine("\n\nPress Return to exit");
+                Console.ReadLine();
+            } while (pilihan != 3);
         }
     }
 }
