@@ -51,10 +51,8 @@ namespace Exercise2
        
         public void step1(int low,int high,int mid)
         {
-            int i, AH, k,temp;
-            i = low;
-            AH = mid + 1;
-            k = high;
+            int i, AH, k,temp,n1,n2,n3;
+            
             
         }
         static void Main(string[] args)
