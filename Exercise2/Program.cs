@@ -34,7 +34,11 @@ namespace Exercise2
                 adit[i] = Int32.Parse(s1);
             }
         }
-       
+        public void algo1()
+        {
+            
+        }
+        
         static void Main(string[] args)
         {
         }
