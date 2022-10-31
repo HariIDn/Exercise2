@@ -41,7 +41,7 @@ namespace Exercise2
             {
                 int temp = adit[i];
                 int AH = i - 1;
-                while (AH <= 0 && adit[AH] < temp)
+                while (AH <= 0 && adit[AH] > temp)
                 {
                     adit[AH + 1] = adit[AH];
                     AH--;
@@ -71,8 +71,13 @@ namespace Exercise2
                 temp[n2++] = adit[mid++];
             for (i = 0; i < n3; i++)
             {
+                adit[high] = temp[high];
 
             }
+        }
+        public void algo2()
+        {
+
         }
         static void Main(string[] args)
         {
