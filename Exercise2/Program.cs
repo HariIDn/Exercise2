@@ -36,7 +36,17 @@ namespace Exercise2
         }
         public void algo1()
         {
-            
+            for (int i = 1; i < n - 1; i++)
+            {
+                int temp = adit[i];
+                int AH = i - 1;
+                while (AH <= 0 && adit[AH] < temp)
+                {
+                    adit[AH + 1] = adit[AH];
+                    AH--;
+                }
+                adit[AH + 1] = temp;
+            }
         }
         
         static void Main(string[] args)
