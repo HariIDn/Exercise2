@@ -9,6 +9,13 @@ namespace Exercise2
     internal class Program
     {
         int[] adit = new int[64];
+        int n;
+
+        public void input()
+        {
+            
+        }
+       
         static void Main(string[] args)
         {
         }
