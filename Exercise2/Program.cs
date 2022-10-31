@@ -53,7 +53,7 @@ namespace Exercise2
         public void step1(int low,int high,int mid)
         {
             int[] temp = new int[64];
-            int i, AH, k,n1,n2,n3;
+            int i,n1,n2,n3;
             n1 = (mid - 1);
             n2 = low;
             n3 = (high - low + 1);
@@ -75,9 +75,16 @@ namespace Exercise2
 
             }
         }
-        public void algo2()
+        public void algo2(int[]temp, int low, int high)
         {
-
+            int mid;
+            if (high > low)
+            {
+                mid = (high + low) / 2;
+                algo2(temp, low, mid);
+                algo2(temp, (mid + 1), high);
+                step1(temp, low, (mid + 1), high);
+            }
         }
         static void Main(string[] args)
         {
