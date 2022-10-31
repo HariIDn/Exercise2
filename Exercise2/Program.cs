@@ -48,7 +48,11 @@ namespace Exercise2
                 adit[AH + 1] = temp;
             }
         }
-        
+       
+        public void algo2()
+        {
+            
+        }
         static void Main(string[] args)
         {
         }
